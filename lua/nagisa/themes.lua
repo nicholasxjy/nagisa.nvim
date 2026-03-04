@@ -42,6 +42,10 @@
 ---@field special1 string
 ---@field special2 string
 ---@field special3 string
+---@field special4 string
+---@field special5 string
+---@field special6 string
+---@field special7 string
 
 ---@class VCSElements
 ---@field added string
@@ -104,6 +108,10 @@ local function setup(colors)
                     special1 = colors.waveBlue,
                     special2 = colors.yellowOrange,
                     special3 = colors.greenDark,
+                    special4 = colors.burntOrange,
+                    special5 = colors.redPastel,
+                    special6 = colors.greenPastel,
+                    special7 = colors.yellowOrange,
                 },
                 vcs = {
                     added = colors.green,
@@ -165,6 +173,9 @@ local function setup(colors)
                     special1 = colors.blue,
                     special2 = colors.yellowOrange,
                     special3 = colors.greenDark,
+                    special4 = colors.burntOrange,
+                    special5 = colors.redPastel,
+                    special6 = colors.redDark,
                 },
                 vcs = {
                     added = colors.green,

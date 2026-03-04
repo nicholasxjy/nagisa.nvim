@@ -6,7 +6,7 @@ function M.setup(theme, opts)
     opts = opts or require("nagisa.config").opts
 
     return {
-        ["@type.builtin"] = { link = "@type" },
+        ["@type.builtin"] = { fg = theme.syn.special6 },
         ["@lsp.typemod.type.defaultLibrary"] = { link = "@type.builtin" },
         ["@lsp.type.type"] = { link = "@type" },
         ["@lsp.type.typeParameter"] = { link = "@type" },
@@ -24,7 +24,7 @@ function M.setup(theme, opts)
         ["@lsp.type.comment.c"] = { link = "Comment" },
         ["@lsp.type.comment.cpp"] = { link = "Comment" },
         ["@event"] = { link = "Identifier" },
-        ["@interface"] = { link = "Identifier" },
+        ["@interface"] = { fg = theme.syn.special7, bold = true },
         ["@modifier"] = { link = "Identifier" },
         ["@regexp"] = { fg = theme.syn.constant, bg = "NONE" },
         ["@decorator"] = { link = "Identifier" },
