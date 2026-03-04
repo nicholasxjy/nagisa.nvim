@@ -37,13 +37,13 @@ function M.setup(theme, opts)
         IncSearch = { fg = "NONE", bg = theme.ui.search },
 
         -- Floating window highlights
-        NormalFloat = { fg = theme.ui.fg, bg = opts.transparent and "NONE" or theme.ui.bg_dim },
-        FloatBorder = { fg = theme.ui.float.border, bg = opts.transparent and "NONE" or theme.ui.bg_dim },
+        NormalFloat = { fg = theme.ui.fg, bg = opts.transparent and "NONE" or theme.ui.float.bg },
+        FloatBorder = { fg = theme.ui.float.border, bg = opts.transparent and "NONE" or theme.ui.float.bg },
         FloatTitle = { fg = theme.ui.float.title, bg = opts.transparent and "NONE" or theme.ui.float.bg, bold = true },
         FloatFooter = { fg = theme.ui.fg_dim, bg = opts.transparent and "NONE" or theme.ui.float.bg },
 
         -- Popup menu highlights
-        Pmenu = { fg = theme.ui.pmenu.main, bg = opts.transparent and "NONE" or theme.ui.bg_dim },
+        Pmenu = { fg = theme.ui.pmenu.main, bg = opts.transparent and "NONE" or theme.ui.float.bg },
         PmenuSel = { fg = theme.ui.bg, bg = theme.ui.pmenu.sel },
         PmenuMatchSel = { fg = theme.ui.bg, bold = true },
         PmenuSbar = { fg = "NONE", bg = opts.transparent and "NONE" or theme.ui.bg },
